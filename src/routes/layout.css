@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@import 'tailwindcss';
+
+@theme {
+	--font-playfair: 'Playfair Display', serif;
+	--font-montserrat: 'Montserrat', sans-serif;
+	--font-great-vibes: 'Great Vibes', cursive;
+}
+
+body {
+	@apply bg-gradient-to-b from-[#E3F2FD] to-[#EDE7F6] min-h-screen font-montserrat text-slate-800;
+}
