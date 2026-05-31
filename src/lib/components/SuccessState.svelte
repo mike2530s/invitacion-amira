@@ -1,9 +1,9 @@
 <script lang="ts">
-	let { nombre, personas, asistencia, oncalendar }: {
+	let { nombre, personas, asistencia, onhome }: {
 		nombre?: string;
 		personas?: number;
 		asistencia?: string;
-		oncalendar?: () => void;
+		onhome?: () => void;
 	} = $props();
 
 	const attending = asistencia === 'si';
@@ -111,15 +111,13 @@
 		{/if}
 	</div>
 
-	<!-- Calendar button (only if attending) -->
-	{#if attending}
-		<button
-			onclick={oncalendar}
-			class="cal-btn font-montserrat text-sm font-semibold"
-		>
-			Guardar en mi calendario
-		</button>
-	{/if}
+	<!-- Home button -->
+	<button
+		onclick={onhome}
+		class="cal-btn font-montserrat text-sm font-semibold"
+	>
+		Regreso al inicio
+	</button>
 
 	<!-- Closing message from family -->
 	<p class="font-playfair italic text-[#8AADD4] text-xs mt-6 text-center px-6 leading-relaxed">

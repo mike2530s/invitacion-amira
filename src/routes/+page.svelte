@@ -79,8 +79,9 @@
 		}
 	}
 
-	function handleCalendar() {
-		alert('Evento agregado al calendario');
+	function handleHome() {
+		screen = 'hero';
+		rsvpData = null;
 	}
 </script>
 
@@ -129,7 +130,7 @@
 					nombre={rsvpData?.name}
 					personas={rsvpData?.personas}
 					asistencia={rsvpData?.asistencia}
-					oncalendar={handleCalendar}
+					onhome={handleHome}
 				/>
 			{:else if screen === 'error'}
 				<ErrorState onretry={handleRetry} />
