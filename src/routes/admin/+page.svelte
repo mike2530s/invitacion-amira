@@ -5,6 +5,7 @@
 	let error = $state('');
 	let authenticated = $state(false);
 	let isLoggingIn = $state(false);
+	let showPassword = $state(false);
 
 	// Navigation
 	let currentTab = $state<'dashboard' | 'invitados' | 'ajustes'>('dashboard');
@@ -105,12 +106,26 @@
 				onsubmit={(e) => { e.preventDefault(); handleLogin(); }}
 				class="flex flex-col gap-4"
 			>
-				<input
-					type="password"
-					bind:value={password}
-					placeholder="Contraseña"
-					class="w-full bg-white rounded-xl border border-slate-200 px-5 py-3.5 text-sm text-slate-700 outline-none focus:ring-2 focus:ring-blue-300 transition-all text-center"
-				/>
+				<div class="relative w-full">
+					<input
+						type={showPassword ? "text" : "password"}
+						bind:value={password}
+						placeholder="Contraseña"
+						class="w-full bg-white rounded-xl border border-slate-200 px-5 py-3.5 text-sm text-slate-700 outline-none focus:ring-2 focus:ring-blue-300 transition-all text-center"
+					/>
+					<button
+						type="button"
+						class="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 focus:outline-none"
+						onclick={() => showPassword = !showPassword}
+						title="Mostrar/Ocultar contraseña"
+					>
+						{#if showPassword}
+							<span class="text-sm">🙈</span>
+						{:else}
+							<span class="text-sm">👁️</span>
+						{/if}
+					</button>
+				</div>
 				{#if error}
 					<p class="font-montserrat text-xs text-red-500">{error}</p>
 				{/if}

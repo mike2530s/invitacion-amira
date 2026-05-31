@@ -72,7 +72,7 @@
 
 	<button
 		onclick={oncontinue}
-		class="mt-6 font-montserrat text-sm text-white/70 bg-white/20 backdrop-blur-sm border border-white/50 px-8 py-3 rounded-full hover:text-white hover:bg-white/30 transition-all"
+		class="mt-6 font-montserrat text-sm font-bold text-indigo-900/80 bg-indigo-200/60 backdrop-blur-sm border border-indigo-300/60 px-8 py-3 rounded-full hover:bg-indigo-300/70 hover:text-indigo-900 transition-all"
 	>
 		Continuar
 	</button>
