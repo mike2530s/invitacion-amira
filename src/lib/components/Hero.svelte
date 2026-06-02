@@ -61,12 +61,18 @@
 	<!-- Avatar + Elsa (anclados juntos para que siempre estén en sync) -->
 	<div class="relative flex justify-center mb-5 w-full">
 		<!-- Elsa: posicionada relativa al círculo de la niña -->
-		<img
-			src="/elsa.png"
-			alt=""
-			aria-hidden="true"
-			class="elsa-deco absolute pointer-events-none select-none"
-		/>
+		<div class="absolute pointer-events-none select-none"
+		     style="right: calc(50% - 14rem); top: -1rem; width: 16rem; z-index: 0;">
+			<img
+				src="/elsa.png"
+				alt=""
+				aria-hidden="true"
+				class="elsa-deco w-full"
+			/>
+			<div class="absolute inset-0 pointer-events-none"
+			     style="background: linear-gradient(to bottom, transparent 50%, #D4E4F7 85%, #E0DAF0 100%); border-radius: inherit;">
+			</div>
+		</div>
 
 		<!-- Foto de Amira -->
 		<div
@@ -84,8 +90,8 @@
 	<h1 class="font-pinyon text-6xl md:text-8xl leading-tight mb-1 gold-text whitespace-nowrap overflow-visible" style="background: rgba(255,255,255,0.35); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border-radius: 16px; padding: 4px 24px; display: inline-block;">
 		Amira
 	</h1>
-	<p class="font-dancing font-bold text-5xl w-full text-center px-4 text-[#F472B6] mb-6">
-		!Mis 3 años!
+	<p class="font-dancing font-bold text-5xl w-full text-center px-4 text-[#F472B6] mb-6 relative z-10">
+		¡Mis 3 años!
 	</p>
 
 	<!-- Glassmorphism info card -->
@@ -255,22 +261,15 @@
 	}
 
 	.elsa-deco {
-		/* Elsa sale hacia arriba hasta tocar el texto */
-		right: calc(50% - 14rem);
-		top: -1rem;
-		transform: translateX(1em);
-		width: 16rem;
-		z-index: 0; /* detrás de la foto (z-10) y del texto (z-10) */
 		opacity: 0.92;
+		display: block;
 
-		/* Máscara: desvanece los 4 bordes (arriba, abajo, izquierda y derecha)
-		   usando intersección de gradientes → los bordes se funden con el fondo */
+		/* Máscara: desvanece bordes */
 		mask-image: linear-gradient(
 				to bottom,
 				transparent 0%,
 				black 22%,
-				black 76%,
-				transparent 100%
+				black 100%
 			),
 			linear-gradient(
 				to right,
@@ -291,8 +290,7 @@
 				to bottom,
 				transparent 0%,
 				black 22%,
-				black 76%,
-				transparent 100%
+				black 100%
 			),
 			linear-gradient(
 				to right,
