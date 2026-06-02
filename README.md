@@ -28,7 +28,7 @@ El proyecto utiliza SvelteKit como framework full-stack:
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/invitacion-amira.git
+   git clone https://github.com/mike2530s/invitacion-amira.git
    ```
 2. Instala las dependencias:
    ```bash
@@ -50,4 +50,3 @@ Las credenciales sensibles (como la URL del endpoint de Google y la contraseña 
 
 ---
 *Desarrollado con ♥️ para crear momentos inolvidables.*
-# invitacion-amira
