@@ -106,10 +106,10 @@
 				Santa Misa
 			</p>
 			<p class="font-montserrat text-[15px] font-semibold">
-				Capilla de las Monjas
+				Templo de la Salud
 			</p>
 			<p class="font-montserrat text-sm text-[#64748b] italic">
-				Hora: por confirmar
+				20 de junio, 12:00 PM
 			</p>
 		</div>
 
