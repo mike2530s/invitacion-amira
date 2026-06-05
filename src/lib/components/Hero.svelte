@@ -61,17 +61,20 @@
 	<!-- Avatar + Elsa (anclados juntos para que siempre estén en sync) -->
 	<div class="relative flex justify-center mb-5 w-full">
 		<!-- Elsa: posicionada relativa al círculo de la niña -->
-		<div class="absolute pointer-events-none select-none"
-		     style="right: calc(50% - 14rem); top: -1rem; width: 16rem; z-index: 0;">
+		<div
+			class="absolute pointer-events-none select-none"
+			style="right: calc(50% - 14rem); top: -1rem; width: 16rem; z-index: 0;"
+		>
 			<img
 				src="/elsa.png"
 				alt=""
 				aria-hidden="true"
 				class="elsa-deco w-full"
 			/>
-			<div class="absolute inset-0 pointer-events-none"
-			     style="background: linear-gradient(to bottom, transparent 50%, #D4E4F7 85%, #E0DAF0 100%); border-radius: inherit;">
-			</div>
+			<div
+				class="absolute inset-0 pointer-events-none"
+				style="background: linear-gradient(to bottom, transparent 50%, #D4E4F7 85%, #E0DAF0 100%); border-radius: inherit;"
+			></div>
 		</div>
 
 		<!-- Foto de Amira -->
@@ -87,10 +90,15 @@
 	</div>
 
 	<!-- Name & subtitle -->
-	<h1 class="font-pinyon text-6xl md:text-8xl leading-tight mb-1 gold-text whitespace-nowrap overflow-visible" style="background: rgba(255,255,255,0.35); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border-radius: 16px; padding: 4px 24px; display: inline-block;">
+	<h1
+		class="font-pinyon text-6xl md:text-8xl leading-tight mb-1 gold-text whitespace-nowrap overflow-visible"
+		style="background: rgba(255,255,255,0.35); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border-radius: 16px; padding: 4px 24px; display: inline-block;"
+	>
 		Amira
 	</h1>
-	<p class="font-dancing font-bold text-5xl w-full text-center px-4 text-[#F472B6] mb-6 relative z-10">
+	<p
+		class="font-dancing font-bold text-5xl w-full text-center px-4 text-[#F472B6] mb-6 relative z-10"
+	>
 		¡Mis 3 años!
 	</p>
 
@@ -103,13 +111,24 @@
 			<p
 				class="font-montserrat text-sm font-bold uppercase tracking-widest text-[#7BA7D4] mb-1"
 			>
-				Santa Misa
+				Te espero el
 			</p>
-			<p class="font-montserrat text-[15px] font-semibold">
-				Templo de la Salud
-			</p>
-			<p class="font-montserrat text-sm text-[#64748b] italic">
+			<p
+				class="font-montserrat text-sm font-bold uppercase tracking-widest text-[#7BA7D4] mb-1"
+			>
 				20 de junio, 12:00 PM
+			</p>
+			<p class="font-montserrat text-[15px] font-semibold">Santa Misa</p>
+			<p class="font-montserrat text-sm text-[#64748b] italic mt-1">
+				<a
+					href="https://maps.app.goo.gl/YHXgbyi3ht2bkbos8"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="inline-flex items-center justify-center gap-1 hover:text-[#7BA7D4] transition-colors"
+				>
+					<span class="material-symbols-outlined text-[18px]">location_chip</span>
+					Templo de la Salud
+				</a>
 			</p>
 		</div>
 
@@ -127,8 +146,12 @@
 				<a
 					href="https://maps.app.goo.gl/knKDtNFLgjzHp4SbA"
 					target="_blank"
-					rel="noopener noreferrer">Camino Alcocer Real Caminito #8</a
+					rel="noopener noreferrer"
+					class="inline-flex items-center justify-center gap-1 hover:text-[#7BA7D4] transition-colors"
 				>
+					<span class="material-symbols-outlined text-[18px]">location_chip</span>
+					Camino Alcocer Real Caminito #8
+				</a>
 			</p>
 		</div>
 
@@ -187,10 +210,10 @@
 	}
 
 	.gold-text {
-		color: #C8860A;
+		color: #c8860a;
 		text-shadow:
-			0 0 12px rgba(255,255,255,0.7),
-			0 0 24px rgba(255,255,255,0.4),
+			0 0 12px rgba(255, 255, 255, 0.7),
+			0 0 24px rgba(255, 255, 255, 0.4),
 			0 0 20px rgba(255, 200, 50, 0.6),
 			0 2px 4px rgba(80, 40, 0, 0.5);
 		filter: none;
