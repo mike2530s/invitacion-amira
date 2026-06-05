@@ -141,7 +141,7 @@
 			>
 				Festejo
 			</p>
-			<p class="font-montserrat text-[15px] font-semibold">3:00 PM</p>
+			<p class="font-montserrat text-[15px] font-semibold">2:00 PM</p>
 			<p class="font-montserrat text-sm text-[#64748b]">
 				<a
 					href="https://maps.app.goo.gl/knKDtNFLgjzHp4SbA"
