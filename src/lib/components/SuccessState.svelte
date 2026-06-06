@@ -96,13 +96,13 @@
 					Santa Misa
 				</p>
 				<p class="text-xs text-center text-slate-600 font-montserrat">
-					Capilla de las Monjas · <em>Hora por confirmar</em>
+					Templo de la Salud · 12:00 PM
 				</p>
 
 				<div class="divider mt-2"></div>
 
 				<p class="text-[10px] font-bold uppercase tracking-widest text-[#7BA7D4] text-center font-montserrat mt-2">
-					Festejo — 3:00 PM
+					Festejo — 2:00 PM
 				</p>
 				<p class="text-xs text-center text-slate-600 font-montserrat">
 					Camino Alcocer Real Caminito #8
